@@ -57,12 +57,20 @@
 		668BC3922629078400698F87 /* DetailsLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				66FAA7A7262930B9004C70A5 /* Views */,
 				668BC3932629078400698F87 /* DetailsLibrary.h */,
 				668BC3942629078400698F87 /* Info.plist */,
-				66E79DEB26290AA90052ACEE /* DetailsViewController.swift */,
-				66E79DEE26290AC20052ACEE /* Details.storyboard */,
 			);
 			path = DetailsLibrary;
+			sourceTree = "<group>";
+		};
+		66FAA7A7262930B9004C70A5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				66E79DEE26290AC20052ACEE /* Details.storyboard */,
+				66E79DEB26290AA90052ACEE /* DetailsViewController.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		CE2078A7E5421E60D6B5A58E /* Pods */ = {
