@@ -8,12 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		668BC3952629078400698F87 /* DetailsLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = 668BC3932629078400698F87 /* DetailsLibrary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		66E79DEC26290AA90052ACEE /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E79DEB26290AA90052ACEE /* DetailsViewController.swift */; };
+		66E79DEF26290AC20052ACEE /* Details.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66E79DEE26290AC20052ACEE /* Details.storyboard */; };
+		906C7A52C5B94707896B5FFF /* Pods_DetailsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA9459F6E1A8823830082641 /* Pods_DetailsLibrary.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		32C97AD0D54C8009DE60C6D9 /* Pods-DetailsLibrary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DetailsLibrary.release.xcconfig"; path = "Target Support Files/Pods-DetailsLibrary/Pods-DetailsLibrary.release.xcconfig"; sourceTree = "<group>"; };
 		668BC3902629078400698F87 /* DetailsLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DetailsLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		668BC3932629078400698F87 /* DetailsLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailsLibrary.h; sourceTree = "<group>"; };
 		668BC3942629078400698F87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66E79DEB26290AA90052ACEE /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		66E79DEE26290AC20052ACEE /* Details.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Details.storyboard; sourceTree = "<group>"; };
+		874DFAFBE2219802E3AEC9E3 /* Pods-DetailsLibrary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DetailsLibrary.debug.xcconfig"; path = "Target Support Files/Pods-DetailsLibrary/Pods-DetailsLibrary.debug.xcconfig"; sourceTree = "<group>"; };
+		AA9459F6E1A8823830082641 /* Pods_DetailsLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DetailsLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				906C7A52C5B94707896B5FFF /* Pods_DetailsLibrary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,6 +41,8 @@
 			children = (
 				668BC3922629078400698F87 /* DetailsLibrary */,
 				668BC3912629078400698F87 /* Products */,
+				CE2078A7E5421E60D6B5A58E /* Pods */,
+				DDCD0C976BC297E971D09CCE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -48,8 +59,27 @@
 			children = (
 				668BC3932629078400698F87 /* DetailsLibrary.h */,
 				668BC3942629078400698F87 /* Info.plist */,
+				66E79DEB26290AA90052ACEE /* DetailsViewController.swift */,
+				66E79DEE26290AC20052ACEE /* Details.storyboard */,
 			);
 			path = DetailsLibrary;
+			sourceTree = "<group>";
+		};
+		CE2078A7E5421E60D6B5A58E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				874DFAFBE2219802E3AEC9E3 /* Pods-DetailsLibrary.debug.xcconfig */,
+				32C97AD0D54C8009DE60C6D9 /* Pods-DetailsLibrary.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DDCD0C976BC297E971D09CCE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA9459F6E1A8823830082641 /* Pods_DetailsLibrary.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -70,6 +100,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 668BC3982629078400698F87 /* Build configuration list for PBXNativeTarget "DetailsLibrary" */;
 			buildPhases = (
+				B5787DAB3A4AD65889324B32 /* [CP] Check Pods Manifest.lock */,
 				668BC38B2629078400698F87 /* Headers */,
 				668BC38C2629078400698F87 /* Sources */,
 				668BC38D2629078400698F87 /* Frameworks */,
@@ -94,6 +125,7 @@
 				TargetAttributes = {
 					668BC38F2629078400698F87 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 				};
 			};
@@ -120,16 +152,43 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66E79DEF26290AC20052ACEE /* Details.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B5787DAB3A4AD65889324B32 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DetailsLibrary-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		668BC38C2629078400698F87 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66E79DEC26290AA90052ACEE /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +319,9 @@
 		};
 		668BC3992629078400698F87 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 874DFAFBE2219802E3AEC9E3 /* Pods-DetailsLibrary.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 2F4556C25L;
@@ -277,6 +338,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.br.everis.DetailsLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,7 +346,9 @@
 		};
 		668BC39A2629078400698F87 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32C97AD0D54C8009DE60C6D9 /* Pods-DetailsLibrary.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 2F4556C25L;
