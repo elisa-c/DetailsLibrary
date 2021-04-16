@@ -10,7 +10,7 @@
         <!--Details View Controller-->
         <scene sceneID="4Hh-j1-R0J">
             <objects>
-                <viewController id="lDS-Ao-bKj" customClass="DetailsViewController" customModule="DetailsLibrary" sceneMemberID="viewController">
+                <viewController id="lDS-Ao-bKj" customClass="DetailsViewController" customModule="DetailsLibrary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fBT-pR-Zid">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -43,6 +43,10 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IgF-oj-lTJ">
+                                        <rect key="frame" x="99" y="238" width="216" height="55"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" red="0.5490196078431373" green="0.59215686274509804" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -75,7 +79,7 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="última hora" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fik-yl-gfa">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="último dia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fik-yl-gfa">
                                         <rect key="frame" x="0.0" y="45" width="113.33333333333333" height="45"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="lRx-a0-wWC"/>
@@ -84,7 +88,7 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="última hora" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HV2-eY-GmA">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="último mês" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HV2-eY-GmA">
                                         <rect key="frame" x="0.0" y="90" width="113.33333333333333" height="45"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="8wi-cI-WfP"/>
@@ -145,6 +149,16 @@
                             <constraint firstItem="sct-qV-Bdg" firstAttribute="top" secondItem="RX7-7g-w9N" secondAttribute="top" id="wKv-wg-1zp"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="borderButton" destination="IgF-oj-lTJ" id="Ax6-Se-q4P"/>
+                        <outlet property="coinAbbreviation" destination="04i-fH-WYy" id="qJI-8k-Iv1"/>
+                        <outlet property="coinImage" destination="gcv-c0-Kp6" id="2tl-si-rkg"/>
+                        <outlet property="coinValue" destination="SCC-d6-LC9" id="iDD-Ak-Msk"/>
+                        <outlet property="favoritesButton" destination="IgF-oj-lTJ" id="Bks-IY-Z1K"/>
+                        <outlet property="lastDay" destination="C70-8f-EXu" id="Zzp-aM-ayk"/>
+                        <outlet property="lastHour" destination="Pa1-uz-bGr" id="Fr2-lQ-I5o"/>
+                        <outlet property="lastMonth" destination="wTz-ZV-Yyv" id="3Sf-Xq-qSw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="udu-mh-JAy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

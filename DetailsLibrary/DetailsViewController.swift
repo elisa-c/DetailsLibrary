@@ -9,20 +9,24 @@ import UIKit
 
 public class DetailsViewController: UIViewController {
 
+    @IBOutlet weak var coinAbbreviation: UILabel!
+    @IBOutlet weak var borderButton: UIView!
+    @IBOutlet weak var coinImage: UIImageView!
+    @IBOutlet weak var coinValue: UILabel!
+    @IBOutlet weak var favoritesButton: UIView!
+    @IBOutlet weak var lastHour: UILabel!
+    @IBOutlet weak var lastDay: UILabel!
+    @IBOutlet weak var lastMonth: UILabel!
+    
+        
     public override func viewDidLoad() {
         super.viewDidLoad()
-       
+        
+        // adiciona borda à view que contém o botão
+        borderButton.layer.borderWidth = 10
+        borderButton.layer.borderColor = UIColor.white.cgColor
+
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
