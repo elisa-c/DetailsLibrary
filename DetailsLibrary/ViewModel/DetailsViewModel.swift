@@ -7,13 +7,23 @@
 
 import Foundation
 
-class DetailsViewModel {
+public class DetailsViewModel {
     var buttonAdd: Bool
+    var title: String
     var abbreviation: String
     var lastHour: Double
     var lastDay: Double
     var lastMonth: Double
-    var
-
+    var iconURL: String
+    
+    init(buttonAdd: Bool, title: String, abbreviation: String, lastHour: Double, lastDay: Double, lastMonth: Double, iconURL: String) {
+        self.buttonAdd = buttonAdd
+        self.title = title
+        self.abbreviation = abbreviation
+        self.lastHour = lastHour
+        self.lastDay = lastDay
+        self.lastMonth = lastMonth
+        self.iconURL = iconURL
+    }
 
 }
