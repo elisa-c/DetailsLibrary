@@ -23,8 +23,8 @@ public class DetailsViewController: UIViewController {
         super.viewDidLoad()
 
         // adiciona borda à view que contém o botão
-        borderButton.layer.borderWidth = 10
-        borderButton.layer.borderColor = UIColor.white.cgColor
+//        borderButton.layer.borderWidth = 10
+//        borderButton.layer.borderColor = UIColor.white.cgColor
 
     }
 
@@ -54,4 +54,19 @@ extension UIViewController {
         }
         return T()
     }
+}
+
+public class loadStory: UIViewController {
+    public static func execLoad() -> UIViewController {
+        if let bundle = Bundle(identifier: "com.br.everis.DetailsLibrary") {
+            let sb = UIStoryboard(name: "Details", bundle: bundle)
+            let vc = sb.instantiateViewController(withIdentifier: "DetailsID") as! DetailsViewController
+            vc.loadViewIfNeeded()
+            return vc
+        } else {
+            return UIViewController()
+        }
+        
+    }
+    
 }
