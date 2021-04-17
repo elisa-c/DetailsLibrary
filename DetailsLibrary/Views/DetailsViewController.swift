@@ -32,7 +32,6 @@ public class DetailsViewController: UIViewController {
 
 }
 
-
 extension UIViewController {
     public static var bundleUI: Bundle {
         var bundle: Bundle
