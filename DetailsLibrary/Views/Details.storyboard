@@ -10,7 +10,7 @@
         <!--Details View Controller-->
         <scene sceneID="4Hh-j1-R0J">
             <objects>
-                <viewController id="lDS-Ao-bKj" customClass="DetailsViewController" customModule="DetailsLibrary" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailsID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="lDS-Ao-bKj" customClass="DetailsViewController" customModule="DetailsLibrary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fBT-pR-Zid">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
