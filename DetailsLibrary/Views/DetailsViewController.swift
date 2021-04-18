@@ -76,7 +76,9 @@ public class DetailsViewController: UIViewController {
     public func testando(stringTeste:String) {
         print("*****************************##################*******")
         print(stringTeste)
-        self.coinAbbreviation.text = stringTeste
+        DispatchQueue.main.async {
+            self.coinAbbreviation?.text = stringTeste
+           }
         print("*****************************##################*******")
 
     }
