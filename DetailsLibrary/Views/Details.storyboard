@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0sa-CC-cze">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="344"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="$ 31.010.20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SCC-d6-LC9">
                                         <rect key="frame" x="129.66666666666666" y="154.33333333333334" width="154.99999999999997" height="38.333333333333343"/>
@@ -31,33 +31,20 @@
                                             <constraint firstAttribute="width" constant="64" id="jl2-RA-KGL"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ADICIONAR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lXC-MR-qUT">
-                                        <rect key="frame" x="138.66666666666669" y="247.66666666666666" width="136.66666666666669" height="35.333333333333343"/>
-                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="24"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="BTC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="04i-fH-WYy">
-                                        <rect key="frame" x="190.66666666666666" y="9.9999999999999982" width="32.666666666666657" height="23.333333333333329"/>
+                                        <rect key="frame" x="191" y="30" width="32.666666666666657" height="23.333333333333329"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IgF-oj-lTJ">
-                                        <rect key="frame" x="99" y="238" width="216" height="55"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" red="0.5490196078431373" green="0.59215686274509804" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="gcv-c0-Kp6" firstAttribute="centerX" secondItem="0sa-CC-cze" secondAttribute="centerX" id="7vJ-Ss-2oN"/>
-                                    <constraint firstItem="04i-fH-WYy" firstAttribute="top" secondItem="0sa-CC-cze" secondAttribute="top" constant="10" id="CTl-mF-oC5"/>
+                                    <constraint firstItem="04i-fH-WYy" firstAttribute="top" secondItem="0sa-CC-cze" secondAttribute="top" constant="30" id="CTl-mF-oC5"/>
                                     <constraint firstItem="SCC-d6-LC9" firstAttribute="centerX" secondItem="0sa-CC-cze" secondAttribute="centerX" id="Cr6-qF-aVn"/>
-                                    <constraint firstAttribute="bottom" secondItem="lXC-MR-qUT" secondAttribute="bottom" constant="61" id="D92-Zb-mN1"/>
-                                    <constraint firstItem="gcv-c0-Kp6" firstAttribute="top" secondItem="04i-fH-WYy" secondAttribute="bottom" constant="37" id="fxU-FO-cJX"/>
-                                    <constraint firstItem="lXC-MR-qUT" firstAttribute="centerX" secondItem="0sa-CC-cze" secondAttribute="centerX" id="hFa-eT-jZB"/>
+                                    <constraint firstItem="gcv-c0-Kp6" firstAttribute="top" secondItem="04i-fH-WYy" secondAttribute="bottom" constant="17" id="fxU-FO-cJX"/>
                                     <constraint firstItem="04i-fH-WYy" firstAttribute="centerX" secondItem="0sa-CC-cze" secondAttribute="centerX" id="nul-nM-6P8"/>
-                                    <constraint firstItem="lXC-MR-qUT" firstAttribute="top" secondItem="SCC-d6-LC9" secondAttribute="bottom" constant="55" id="q4W-5L-ms1"/>
                                     <constraint firstItem="SCC-d6-LC9" firstAttribute="top" secondItem="gcv-c0-Kp6" secondAttribute="bottom" constant="20" id="ySO-yX-itt"/>
                                 </constraints>
                             </view>
@@ -137,9 +124,9 @@
                         <constraints>
                             <constraint firstItem="0sa-CC-cze" firstAttribute="trailing" secondItem="WWM-PK-P9p" secondAttribute="trailing" id="0YN-eb-WmB"/>
                             <constraint firstItem="RX7-7g-w9N" firstAttribute="leading" secondItem="WWM-PK-P9p" secondAttribute="leading" constant="20" id="3dn-s4-BHb"/>
-                            <constraint firstItem="0sa-CC-cze" firstAttribute="height" secondItem="fBT-pR-Zid" secondAttribute="height" multiplier="0.467391" id="ATA-Fu-wze"/>
+                            <constraint firstItem="0sa-CC-cze" firstAttribute="height" secondItem="fBT-pR-Zid" secondAttribute="height" multiplier="0.467391" constant="-43.999775999999997" id="ATA-Fu-wze"/>
                             <constraint firstItem="WWM-PK-P9p" firstAttribute="bottom" secondItem="Krx-mb-cD4" secondAttribute="bottom" constant="343" id="AYR-Qw-qTF"/>
-                            <constraint firstItem="Krx-mb-cD4" firstAttribute="top" secondItem="0sa-CC-cze" secondAttribute="bottom" constant="20" id="CeD-cG-L9s"/>
+                            <constraint firstItem="Krx-mb-cD4" firstAttribute="top" secondItem="0sa-CC-cze" secondAttribute="bottom" constant="64" id="CeD-cG-L9s"/>
                             <constraint firstItem="0sa-CC-cze" firstAttribute="leading" secondItem="WWM-PK-P9p" secondAttribute="leading" id="KS2-cy-o6V"/>
                             <constraint firstItem="0sa-CC-cze" firstAttribute="top" secondItem="WWM-PK-P9p" secondAttribute="top" id="arm-Hh-2sE"/>
                             <constraint firstItem="Krx-mb-cD4" firstAttribute="leading" secondItem="WWM-PK-P9p" secondAttribute="leading" constant="94" id="fGQ-gL-bA5"/>
@@ -150,11 +137,9 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="borderButton" destination="IgF-oj-lTJ" id="Ax6-Se-q4P"/>
                         <outlet property="coinAbbreviation" destination="04i-fH-WYy" id="qJI-8k-Iv1"/>
                         <outlet property="coinImage" destination="gcv-c0-Kp6" id="2tl-si-rkg"/>
                         <outlet property="coinValue" destination="SCC-d6-LC9" id="iDD-Ak-Msk"/>
-                        <outlet property="favoritesButton" destination="IgF-oj-lTJ" id="Bks-IY-Z1K"/>
                         <outlet property="lastDay" destination="C70-8f-EXu" id="Zzp-aM-ayk"/>
                         <outlet property="lastHour" destination="Pa1-uz-bGr" id="Fr2-lQ-I5o"/>
                         <outlet property="lastMonth" destination="wTz-ZV-Yyv" id="3Sf-Xq-qSw"/>
