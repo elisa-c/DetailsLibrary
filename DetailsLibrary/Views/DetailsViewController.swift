@@ -51,9 +51,10 @@ public class DetailsViewController: UIViewController {
                 if let index = arrayOfFav.firstIndex(of: "um favorito") {
                     arrayOfFav.remove(at: index)
                     defaults.setValue(arrayOfFav, forKey: "arrayTeste")
+                }
+            button.setTitle("ADICIONAR", for: .normal)
+
             }
-            
-        }
     
 }
    
