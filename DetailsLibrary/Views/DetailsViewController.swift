@@ -10,7 +10,6 @@ import UIKit
 public class DetailsViewController: UIViewController {
     
     @IBOutlet weak var coinAbbreviation: UILabel!
-    @IBOutlet weak var borderButton: UIView!
     @IBOutlet weak var coinImage: UIImageView!
     @IBOutlet weak var coinValue: UILabel!
     @IBOutlet weak var favoritesButton: UIView!
@@ -27,6 +26,12 @@ public class DetailsViewController: UIViewController {
     public override func viewDidLoad() {
         super.viewDidLoad()
         
+    }
+    
+    public override func viewDidLayoutSubviews(){
+        button.layer.cornerRadius = 5
+        button.layer.borderWidth = 1
+        button.layer.borderColor = UIColor.black.cgColor
     }
 
     public override func viewWillAppear(_ animated: Bool) {
