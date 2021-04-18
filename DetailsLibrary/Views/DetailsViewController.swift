@@ -33,7 +33,11 @@ public class DetailsViewController: UIViewController {
         }
     
         @objc public func buttonAction(sender: UIButton!) {
-          print("Button tapped")
+            let defaults = UserDefaults.standard
+          print("TESTE DE BOTÃO")
+        // aqui vamos checar o array de favoritos
+            let savedArray = defaults.object(forKey: "arrayTeste") as? [String]
+            print(savedArray ?? ["teste falhou"])
     }
     
 }
