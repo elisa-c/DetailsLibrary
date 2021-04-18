@@ -48,16 +48,18 @@ public class DetailsViewController: UIViewController {
         print(arrayOfFav)
 
         // se o array contém essa moeda, título do botão muda
-        if ((savedArray?.contains("um favorito")) != nil) {
-            button.setTitle("REMOVER", for: .normal)
-            isFavorite = true
+        if let bool = savedArray?.contains("mais outro favorito") {
+            if(bool == true) {
+                button.setTitle("REMOVER", for: .normal)
+                isFavorite = true
+            }
         }
-    }
+        }
     
         @objc public func buttonAction(sender: UIButton!) {
             // aqui vai a lógica de adicionar ou remover
             if(isFavorite) {
-                if let index = arrayOfFav.firstIndex(of: "um favorito") {
+                if let index = arrayOfFav.firstIndex(of: "mais um outro favorito") {
                     arrayOfFav.remove(at: index)
                     defaults.setValue(arrayOfFav, forKey: "arrayTeste")
                 }
