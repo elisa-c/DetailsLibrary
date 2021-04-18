@@ -23,7 +23,7 @@ public class DetailsViewController: UIViewController {
     var isFavorite: Bool = false
     let defaults = UserDefaults.standard
     var arrayOfFav:[String] = []
-
+    
     public override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -34,8 +34,8 @@ public class DetailsViewController: UIViewController {
         button.setTitle("ADICIONAR", for: .normal)
         button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
         self.view.addSubview(button)
-
-        }
+        
+    }
     
     public override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
@@ -46,7 +46,7 @@ public class DetailsViewController: UIViewController {
         let savedArray = defaults.object(forKey: "arrayTeste") as? [String]
         arrayOfFav = savedArray!
         print(arrayOfFav)
-
+        
         // se o array contém essa moeda, título do botão muda
         if let bool = savedArray?.contains("mais outro favorito") {
             if(bool == true) {
@@ -54,26 +54,33 @@ public class DetailsViewController: UIViewController {
                 isFavorite = true
             }
         }
-        }
+    }
     
-        @objc public func buttonAction(sender: UIButton!) {
-            // aqui vai a lógica de adicionar ou remover
-            if(isFavorite) {
-                if let index = arrayOfFav.firstIndex(of: "mais um outro favorito") {
-                    arrayOfFav.remove(at: index)
-                    defaults.setValue(arrayOfFav, forKey: "arrayTeste")
-                }
-            button.setTitle("ADICIONAR", for: .normal)
-
-            } else {
-                arrayOfFav.append("outro favorito")
+    @objc public func buttonAction(sender: UIButton!) {
+        // aqui vai a lógica de adicionar ou remover
+        if(isFavorite) {
+            if let index = arrayOfFav.firstIndex(of: "mais um outro favorito") {
+                arrayOfFav.remove(at: index)
                 defaults.setValue(arrayOfFav, forKey: "arrayTeste")
-                viewWillAppear(true)
-
             }
+            button.setTitle("ADICIONAR", for: .normal)
+            
+        } else {
+            arrayOfFav.append("outro favorito")
+            defaults.setValue(arrayOfFav, forKey: "arrayTeste")
+            viewWillAppear(true)
+            
+        }
+        
+    }
     
-}
-   
+    public func testando(stringTeste:String) {
+        print("*****************************##################*******")
+        print(stringTeste)
+        print("*****************************##################*******")
+
+    }
+    
 }
 
 extension UIViewController {
