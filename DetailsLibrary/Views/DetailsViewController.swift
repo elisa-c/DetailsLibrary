@@ -77,7 +77,7 @@ public class DetailsViewController: UIViewController {
     public func testando(stringTeste:String) {
         print("*****************************##################*******")
         print(stringTeste)
-        coinAbbreviation.text = stringTeste
+        coinAbbreviation?.text = stringTeste
         print("*****************************##################*******")
 
     }
