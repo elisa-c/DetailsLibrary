@@ -19,26 +19,40 @@ public class DetailsViewController: UIViewController {
     @IBOutlet weak var lastMonth: UILabel!
     
     var teste: String = ""
-    
+    var button: UIButton = UIButton(frame: CGRect(x: 0, y: 220, width: 100, height: 50))
+    var isFavorite: Bool = false
+    let defaults = UserDefaults.standard
+    var arrayOfFav:[String] = []
+
     public override func viewDidLoad() {
         super.viewDidLoad()
         
-        let button = UIButton(frame: CGRect(x: 0, y: 220, width: 100, height: 50))
         button.center = self.view.center
         button.backgroundColor = .black
         button.setTitle("ADICIONAR", for: .normal)
         button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
         self.view.addSubview(button)
+        
+        // recuperando o array de favoritos
+        let savedArray = defaults.object(forKey: "arrayTeste") as? [String]
+        arrayOfFav = savedArray ?? arrayOfFav
+        print(arrayOfFav)
 
+        // se o array contém essa moeda, título do botão muda
+        if ((savedArray?.contains("um favorito")) != nil) {
+            button.setTitle("REMOVER", for: .normal)
+            isFavorite = true
+        }
         }
     
         @objc public func buttonAction(sender: UIButton!) {
-            let defaults = UserDefaults.standard
-          print("TESTE DE BOTÃO")
-        // aqui vamos checar o array de favoritos
             let savedArray = defaults.object(forKey: "arrayTeste") as? [String]
-            print(savedArray ?? ["teste falhou"])
-    }
+            // aqui vai a lógica de adicionar ou remover
+            if(isFavorite) {
+                
+            }
+            
+        }
     
 }
    
