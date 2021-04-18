@@ -44,7 +44,7 @@ public class DetailsViewController: UIViewController {
         
         // recuperando o array de favoritos
         let savedArray = defaults.object(forKey: "arrayTeste") as? [String]
-        arrayOfFav = savedArray ?? arrayOfFav
+        arrayOfFav = savedArray!
         print(arrayOfFav)
 
         // se o array contém essa moeda, título do botão muda
