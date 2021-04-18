@@ -43,9 +43,6 @@
                                         <state key="normal" title="ADICIONAR">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
-                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="addOrRemove:" destination="lDS-Ao-bKj" eventType="touchUpInside" id="Nc2-Bh-UIz"/>
                                         </connections>

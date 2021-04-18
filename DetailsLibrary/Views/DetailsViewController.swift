@@ -32,6 +32,8 @@ public class DetailsViewController: UIViewController {
         button.layer.cornerRadius = 5
         button.layer.borderWidth = 1
         button.layer.borderColor = UIColor.black.cgColor
+        button.contentEdgeInsets = UIEdgeInsets(top: 5,left: 5,bottom: 5,right: 5)
+
     }
 
     public override func viewWillAppear(_ animated: Bool) {
