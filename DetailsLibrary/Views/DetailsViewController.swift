@@ -27,6 +27,8 @@ public class DetailsViewController: UIViewController {
     public override func viewDidLoad() {
         super.viewDidLoad()
         
+        print("viewDidLoad")
+        
         button.center = self.view.center
         button.backgroundColor = .black
         button.setTitle("ADICIONAR", for: .normal)
@@ -36,6 +38,9 @@ public class DetailsViewController: UIViewController {
         }
     
     public override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        
+        print("viewWillAppear")
         
         // recuperando o array de favoritos
         let savedArray = defaults.object(forKey: "arrayTeste") as? [String]
@@ -58,6 +63,9 @@ public class DetailsViewController: UIViewController {
                 }
             button.setTitle("ADICIONAR", for: .normal)
 
+            } else {
+                arrayOfFav.append("mais outro favorito")
+                defaults.setValue(arrayOfFav, forKey: "arrayTeste")
             }
     
 }
