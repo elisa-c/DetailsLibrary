@@ -32,6 +32,10 @@ public class DetailsViewController: UIViewController {
         button.setTitle("ADICIONAR", for: .normal)
         button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
         self.view.addSubview(button)
+
+        }
+    
+    public override func viewWillAppear(_ animated: Bool) {
         
         // recuperando o array de favoritos
         let savedArray = defaults.object(forKey: "arrayTeste") as? [String]
@@ -43,7 +47,7 @@ public class DetailsViewController: UIViewController {
             button.setTitle("REMOVER", for: .normal)
             isFavorite = true
         }
-        }
+    }
     
         @objc public func buttonAction(sender: UIButton!) {
             // aqui vai a lógica de adicionar ou remover
