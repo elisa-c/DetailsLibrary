@@ -28,10 +28,11 @@ public class DetailsViewController: UIViewController {
         button.backgroundColor = .black
         button.setTitle("ADICIONAR", for: .normal)
         button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
+        self.view.addSubview(button)
 
         }
     
-        @objc func buttonAction(sender: UIButton!) {
+        @objc public func buttonAction(sender: UIButton!) {
           print("Button tapped")
     }
     
