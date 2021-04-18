@@ -29,7 +29,6 @@ public class DetailsViewController: UIViewController {
         
         print("viewDidLoad")
         
-        button.center = self.view.center
         button.backgroundColor = .black
         button.setTitle("ADICIONAR", for: .normal)
         button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
@@ -77,7 +76,7 @@ public class DetailsViewController: UIViewController {
     public func testando(stringTeste:String) {
         print("*****************************##################*******")
         print(stringTeste)
-        coinAbbreviation?.text = stringTeste
+        self.coinAbbreviation.text = stringTeste
         print("*****************************##################*******")
 
     }
