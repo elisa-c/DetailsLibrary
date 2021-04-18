@@ -64,8 +64,10 @@ public class DetailsViewController: UIViewController {
             button.setTitle("ADICIONAR", for: .normal)
 
             } else {
-                arrayOfFav.append("mais outro favorito")
+                arrayOfFav.append("outro favorito")
                 defaults.setValue(arrayOfFav, forKey: "arrayTeste")
+                viewWillAppear(true)
+
             }
     
 }
