@@ -46,17 +46,18 @@ public class DetailsViewController: UIViewController {
         }
     
         @objc public func buttonAction(sender: UIButton!) {
-            let savedArray = defaults.object(forKey: "arrayTeste") as? [String]
             // aqui vai a lógica de adicionar ou remover
             if(isFavorite) {
-                
+                if let index = arrayOfFav.firstIndex(of: "um favorito") {
+                    arrayOfFav.remove(at: index)
+                    defaults.setValue(arrayOfFav, forKey: "arrayTeste")
             }
             
         }
     
 }
    
-
+}
 
 extension UIViewController {
     public static var bundleUI: Bundle {
