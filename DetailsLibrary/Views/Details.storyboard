@@ -18,31 +18,32 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0sa-CC-cze">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="331.33333333333331"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="QmE-5c-VdC" userLabel="Stack View HalfScreen">
+                                    <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="QmE-5c-VdC" userLabel="Stack View HalfScreen">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="331.33333333333331"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="BTC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="04i-fH-WYy">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="78.666666666666671"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="40" id="fEj-va-Vpx"/>
+                                                    <constraint firstAttribute="height" constant="80" id="Ipt-7G-Yb7"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="naj-e3-xZQ" userLabel="Value and Icon">
-                                                <rect key="frame" x="0.0" y="78.666666666666671" width="414" height="132.66666666666663"/>
+                                                <rect key="frame" x="0.0" y="90.000000000000014" width="414" height="131.33333333333337"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bitcoinsign.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="gcv-c0-Kp6">
-                                                        <rect key="frame" x="0.0" y="1" width="414" height="93"/>
+                                                        <rect key="frame" x="0.0" y="1" width="414" height="62.666666666666671"/>
                                                         <color key="tintColor" red="0.98431372549999996" green="0.70980392160000005" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
+                                                            <constraint firstAttribute="height" constant="64" id="6wX-EI-Wcl"/>
                                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="32" id="ARR-jt-IYI"/>
                                                             <constraint firstAttribute="width" relation="lessThanOrEqual" constant="64" id="jl2-RA-KGL"/>
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="$ 31.010.20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SCC-d6-LC9">
-                                                        <rect key="frame" x="0.0" y="94.333333333333329" width="414" height="38.333333333333329"/>
+                                                        <rect key="frame" x="0.0" y="63.999999999999993" width="414" height="67.333333333333314"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" relation="lessThanOrEqual" constant="67.329999999999998" id="4Sj-pZ-e3Y"/>
                                                         </constraints>
@@ -53,9 +54,10 @@
                                                 </subviews>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1PJ-dP-iUa">
-                                                <rect key="frame" x="0.0" y="211.33333333333337" width="414" height="120"/>
+                                                <rect key="frame" x="0.0" y="231.33333333333337" width="414" height="100"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="120" id="Fxr-5M-RoF"/>
+                                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="80" id="Fxr-5M-RoF"/>
+                                                    <constraint firstAttribute="height" constant="80" id="GUO-ot-bfb"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="24"/>
                                                 <state key="normal" title="ADICIONAR">
