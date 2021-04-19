@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lDS-Ao-bKj">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,27 +12,28 @@
             <objects>
                 <viewController storyboardIdentifier="DetailsID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="lDS-Ao-bKj" customClass="DetailsViewController" customModule="DetailsLibrary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fBT-pR-Zid">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0sa-CC-cze">
-                                <rect key="frame" x="0.0" y="44" width="414" height="368"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="331.33333333333331"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gcv-c0-Kp6">
-                                        <rect key="frame" x="175" y="104" width="64" height="64"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bitcoinsign.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="gcv-c0-Kp6">
+                                        <rect key="frame" x="175" y="101" width="64" height="62.666666666666671"/>
+                                        <color key="tintColor" red="0.98431372549999996" green="0.70980392160000005" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="64" id="ARR-jt-IYI"/>
                                             <constraint firstAttribute="width" constant="64" id="jl2-RA-KGL"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="BTC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="04i-fH-WYy">
-                                        <rect key="frame" x="190.5" y="20" width="33" height="27.5"/>
+                                        <rect key="frame" x="190.66666666666666" y="20" width="32.666666666666657" height="23.333333333333329"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1PJ-dP-iUa">
-                                        <rect key="frame" x="131" y="256" width="152" height="44"/>
+                                        <rect key="frame" x="131" y="219.33333333333334" width="152" height="44.000000000000028"/>
                                         <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="24"/>
                                         <state key="normal" title="ADICIONAR">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -42,7 +43,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="$ 31.010.20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SCC-d6-LC9">
-                                        <rect key="frame" x="129.5" y="176" width="155" height="38.5"/>
+                                        <rect key="frame" x="129.66666666666666" y="172" width="154.99999999999997" height="38.333333333333343"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="28"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -50,11 +51,9 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.5490196078431373" green="0.59215686274509804" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="SCC-d6-LC9" firstAttribute="top" secondItem="0sa-CC-cze" secondAttribute="top" constant="176" id="6fh-39-WFC"/>
                                     <constraint firstItem="04i-fH-WYy" firstAttribute="top" secondItem="0sa-CC-cze" secondAttribute="top" constant="20" id="9rh-dc-b2S"/>
                                     <constraint firstItem="SCC-d6-LC9" firstAttribute="centerX" secondItem="0sa-CC-cze" secondAttribute="centerX" id="GRp-rM-Deq"/>
                                     <constraint firstAttribute="bottom" secondItem="1PJ-dP-iUa" secondAttribute="bottom" constant="68" id="MKp-AA-5ZZ"/>
-                                    <constraint firstItem="1PJ-dP-iUa" firstAttribute="top" secondItem="SCC-d6-LC9" secondAttribute="bottom" constant="41.5" id="Yg9-kA-wJk"/>
                                     <constraint firstItem="1PJ-dP-iUa" firstAttribute="centerX" secondItem="0sa-CC-cze" secondAttribute="centerX" id="cZJ-w9-eIN"/>
                                     <constraint firstItem="04i-fH-WYy" firstAttribute="centerX" secondItem="0sa-CC-cze" secondAttribute="centerX" id="hPl-me-QU7"/>
                                     <constraint firstItem="gcv-c0-Kp6" firstAttribute="centerX" secondItem="0sa-CC-cze" secondAttribute="centerX" id="mKh-YQ-mE8"/>
@@ -74,7 +73,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="volumes negociados" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Krx-mb-cD4">
-                                <rect key="frame" x="93.5" y="452" width="227" height="33"/>
+                                <rect key="frame" x="93.666666666666686" y="371.33333333333331" width="227" height="33"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="Kds-nn-WPe"/>
                                 </constraints>
@@ -83,10 +82,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="RX7-7g-w9N">
-                                <rect key="frame" x="20" y="514" width="113.5" height="135"/>
+                                <rect key="frame" x="19.999999999999993" y="433.33333333333331" width="113.33333333333331" height="134.99999999999994"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="última hora" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Kd-WX-Kck">
-                                        <rect key="frame" x="0.0" y="0.0" width="113.5" height="45"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="113.33333333333333" height="45"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="jvw-Ke-nx5"/>
                                         </constraints>
@@ -95,7 +94,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="último dia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fik-yl-gfa">
-                                        <rect key="frame" x="0.0" y="45" width="113.5" height="45"/>
+                                        <rect key="frame" x="0.0" y="45" width="113.33333333333333" height="45"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="lRx-a0-wWC"/>
                                         </constraints>
@@ -104,7 +103,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="último mês" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HV2-eY-GmA">
-                                        <rect key="frame" x="0.0" y="90" width="113.5" height="45"/>
+                                        <rect key="frame" x="0.0" y="90.000000000000057" width="113.33333333333333" height="45"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="8wi-cI-WfP"/>
                                         </constraints>
@@ -115,7 +114,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="sct-qV-Bdg">
-                                <rect key="frame" x="262" y="514" width="132" height="135"/>
+                                <rect key="frame" x="262" y="433.33333333333331" width="132" height="134.99999999999994"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 123.456.78" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pa1-uz-bGr">
                                         <rect key="frame" x="0.0" y="0.0" width="132" height="45"/>
@@ -136,7 +135,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 123.456.78" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wTz-ZV-Yyv">
-                                        <rect key="frame" x="0.0" y="90" width="132" height="45"/>
+                                        <rect key="frame" x="0.0" y="90.000000000000057" width="132" height="45"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="CBe-ap-II3"/>
                                         </constraints>
@@ -180,4 +179,7 @@
             <point key="canvasLocation" x="3275.36231884058" y="-2012.2767857142856"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bitcoinsign.circle" catalog="system" width="128" height="121"/>
+    </resources>
 </document>
