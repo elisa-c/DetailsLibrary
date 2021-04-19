@@ -18,7 +18,8 @@ class DetailsAPI {
         let task = URLSession.shared.dataTask(with: url) { (data, _, error) in
             guard let data = data, error == nil else {return}
             do {
-                let coin = try JSONDecoder().decode(DetailsCodable.self, from: data)
+                let coins = try JSONDecoder().decode([DetailsCodable].self, from: data)
+                guard let coin = coins.first else {return}
                 completion(coin)
             } catch {
                 print(error)

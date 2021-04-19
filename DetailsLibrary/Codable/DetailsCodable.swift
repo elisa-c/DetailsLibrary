@@ -28,3 +28,5 @@ struct DetailsCodable: Codable {
         case idIcon = "id_icon"
     }
 }
+
+
