@@ -52,7 +52,7 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1PJ-dP-iUa">
                                                 <rect key="frame" x="0.0" y="212.33333333333337" width="414" height="119"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="80" id="Fxr-5M-RoF"/>
+                                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="120" id="Fxr-5M-RoF"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="24"/>
                                                 <state key="normal" title="ADICIONAR">
@@ -120,7 +120,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="último mês" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HV2-eY-GmA">
-                                        <rect key="frame" x="0.0" y="90" width="113.33333333333333" height="45"/>
+                                        <rect key="frame" x="0.0" y="90.000000000000057" width="113.33333333333333" height="45"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="8wi-cI-WfP"/>
                                         </constraints>
@@ -152,7 +152,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 123.456.78" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wTz-ZV-Yyv">
-                                        <rect key="frame" x="0.0" y="90" width="132" height="45"/>
+                                        <rect key="frame" x="0.0" y="90.000000000000057" width="132" height="45"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="CBe-ap-II3"/>
                                         </constraints>
