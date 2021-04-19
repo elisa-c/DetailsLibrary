@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0sa-CC-cze">
-                                <rect key="frame" x="0.0" y="44" width="414" height="409"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="410"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gcv-c0-Kp6">
                                         <rect key="frame" x="175" y="104" width="64" height="64"/>
@@ -73,10 +73,10 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Idx-xT-5zH">
-                                <rect key="frame" x="0.0" y="452" width="414" height="409"/>
+                                <rect key="frame" x="0.0" y="452" width="414" height="410"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="RX7-7g-w9N">
-                                        <rect key="frame" x="20" y="104" width="113.5" height="135"/>
+                                        <rect key="frame" x="20" y="105" width="113.5" height="135"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="última hora" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Kd-WX-Kck">
                                                 <rect key="frame" x="0.0" y="0.0" width="113.5" height="45"/>
@@ -108,7 +108,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="sct-qV-Bdg">
-                                        <rect key="frame" x="262" y="104" width="132" height="135"/>
+                                        <rect key="frame" x="262" y="105" width="132" height="135"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 123.456.78" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pa1-uz-bGr">
                                                 <rect key="frame" x="0.0" y="0.0" width="132" height="45"/>
@@ -140,7 +140,7 @@
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="volumes negociados" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Krx-mb-cD4">
-                                        <rect key="frame" x="93.5" y="33" width="227" height="29"/>
+                                        <rect key="frame" x="93.5" y="34" width="227" height="29"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="29" id="dQb-2G-ZO2"/>
                                         </constraints>
@@ -163,13 +163,18 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Krx-mb-cD4" firstAttribute="top" secondItem="0sa-CC-cze" secondAttribute="bottom" constant="32" id="1GV-6s-R0I"/>
+                            <constraint firstItem="Idx-xT-5zH" firstAttribute="top" secondItem="WWM-PK-P9p" secondAttribute="top" constant="408" id="2Ci-GY-54j"/>
                             <constraint firstAttribute="trailing" secondItem="0sa-CC-cze" secondAttribute="trailing" id="3h5-rl-W3b"/>
                             <constraint firstItem="0sa-CC-cze" firstAttribute="trailing" secondItem="Idx-xT-5zH" secondAttribute="trailing" id="C80-6b-RDO"/>
-                            <constraint firstItem="WWM-PK-P9p" firstAttribute="bottom" secondItem="0sa-CC-cze" secondAttribute="bottom" constant="409" id="Joj-dZ-h8V"/>
+                            <constraint firstItem="WWM-PK-P9p" firstAttribute="bottom" secondItem="Idx-xT-5zH" secondAttribute="bottom" id="H8i-gt-NJ8"/>
                             <constraint firstItem="0sa-CC-cze" firstAttribute="height" secondItem="Idx-xT-5zH" secondAttribute="height" id="Lkn-Hk-tQZ"/>
-                            <constraint firstItem="Idx-xT-5zH" firstAttribute="top" secondItem="WWM-PK-P9p" secondAttribute="top" constant="408" id="NO0-C0-MuU"/>
                             <constraint firstItem="0sa-CC-cze" firstAttribute="leading" secondItem="fBT-pR-Zid" secondAttribute="leading" id="R5l-44-2pe"/>
+                            <constraint firstItem="Idx-xT-5zH" firstAttribute="trailing" secondItem="WWM-PK-P9p" secondAttribute="trailing" id="VCl-fN-iXk"/>
+                            <constraint firstItem="Idx-xT-5zH" firstAttribute="leading" secondItem="WWM-PK-P9p" secondAttribute="leading" id="YnW-9v-DAm"/>
+                            <constraint firstItem="0sa-CC-cze" firstAttribute="leading" secondItem="WWM-PK-P9p" secondAttribute="leading" id="aMX-v3-rgU"/>
+                            <constraint firstItem="0sa-CC-cze" firstAttribute="top" secondItem="WWM-PK-P9p" secondAttribute="top" id="aVh-DB-thl"/>
                             <constraint firstItem="0sa-CC-cze" firstAttribute="top" secondItem="WWM-PK-P9p" secondAttribute="top" id="aji-Rj-jH7"/>
+                            <constraint firstItem="0sa-CC-cze" firstAttribute="trailing" secondItem="WWM-PK-P9p" secondAttribute="trailing" id="i8o-Tc-G5J"/>
                             <constraint firstItem="0sa-CC-cze" firstAttribute="leading" secondItem="Idx-xT-5zH" secondAttribute="leading" id="ll0-x4-ueg"/>
                         </constraints>
                     </view>
