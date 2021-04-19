@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		660DBBCD262E0157007E2CEE /* DetailsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660DBBCC262E0157007E2CEE /* DetailsAPI.swift */; };
+		660DBBD1262E01AE007E2CEE /* DetailsCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660DBBD0262E01AE007E2CEE /* DetailsCodable.swift */; };
 		668BC3952629078400698F87 /* DetailsLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = 668BC3932629078400698F87 /* DetailsLibrary.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		66CA94EB262B443C00F1DF4D /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CA94EA262B443C00F1DF4D /* DetailsViewModel.swift */; };
 		66CA9512262BAAC100F1DF4D /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CA9511262BAAC100F1DF4D /* Button.swift */; };
@@ -17,6 +19,8 @@
 
 /* Begin PBXFileReference section */
 		32C97AD0D54C8009DE60C6D9 /* Pods-DetailsLibrary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DetailsLibrary.release.xcconfig"; path = "Target Support Files/Pods-DetailsLibrary/Pods-DetailsLibrary.release.xcconfig"; sourceTree = "<group>"; };
+		660DBBCC262E0157007E2CEE /* DetailsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsAPI.swift; sourceTree = "<group>"; };
+		660DBBD0262E01AE007E2CEE /* DetailsCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsCodable.swift; sourceTree = "<group>"; };
 		668BC3902629078400698F87 /* DetailsLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DetailsLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		668BC3932629078400698F87 /* DetailsLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailsLibrary.h; sourceTree = "<group>"; };
 		668BC3942629078400698F87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -40,6 +44,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		660DBBC7262E0029007E2CEE /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				660DBBCC262E0157007E2CEE /* DetailsAPI.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		660DBBCF262E01A0007E2CEE /* Codable */ = {
+			isa = PBXGroup;
+			children = (
+				660DBBD0262E01AE007E2CEE /* DetailsCodable.swift */,
+			);
+			path = Codable;
+			sourceTree = "<group>";
+		};
 		668BC3862629078400698F87 = {
 			isa = PBXGroup;
 			children = (
@@ -61,6 +81,8 @@
 		668BC3922629078400698F87 /* DetailsLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				660DBBCF262E01A0007E2CEE /* Codable */,
+				660DBBC7262E0029007E2CEE /* Service */,
 				66CA94E9262B43F700F1DF4D /* ViewModel */,
 				66FAA7A7262930B9004C70A5 /* Views */,
 				668BC3932629078400698F87 /* DetailsLibrary.h */,
@@ -213,6 +235,8 @@
 				66E79DEC26290AA90052ACEE /* DetailsViewController.swift in Sources */,
 				66CA9512262BAAC100F1DF4D /* Button.swift in Sources */,
 				66CA94EB262B443C00F1DF4D /* DetailsViewModel.swift in Sources */,
+				660DBBD1262E01AE007E2CEE /* DetailsCodable.swift in Sources */,
+				660DBBCD262E0157007E2CEE /* DetailsAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,9 +386,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.br.everis.DetailsLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -389,8 +414,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.br.everis.DetailsLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
