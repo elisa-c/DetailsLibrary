@@ -31,18 +31,18 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="naj-e3-xZQ" userLabel="Value and Icon">
-                                                <rect key="frame" x="0.0" y="80.000000000000014" width="414" height="132.33333333333337"/>
+                                                <rect key="frame" x="0.0" y="80.000000000000014" width="414" height="131.33333333333337"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bitcoinsign.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="gcv-c0-Kp6">
                                                         <rect key="frame" x="0.0" y="1" width="414" height="62.666666666666671"/>
                                                         <color key="tintColor" red="0.98431372549999996" green="0.70980392160000005" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="64" id="ARR-jt-IYI"/>
-                                                            <constraint firstAttribute="width" constant="64" id="jl2-RA-KGL"/>
+                                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="64" id="ARR-jt-IYI"/>
+                                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="64" id="jl2-RA-KGL"/>
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="$ 31.010.20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SCC-d6-LC9">
-                                                        <rect key="frame" x="0.0" y="63.999999999999993" width="414" height="68.333333333333314"/>
+                                                        <rect key="frame" x="0.0" y="63.999999999999993" width="414" height="67.333333333333314"/>
                                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="28"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -50,7 +50,7 @@
                                                 </subviews>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1PJ-dP-iUa">
-                                                <rect key="frame" x="0.0" y="212.33333333333337" width="414" height="119"/>
+                                                <rect key="frame" x="0.0" y="211.33333333333337" width="414" height="120"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="120" id="Fxr-5M-RoF"/>
                                                 </constraints>
@@ -64,7 +64,7 @@
                                             </button>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="naj-e3-xZQ" firstAttribute="height" secondItem="QmE-5c-VdC" secondAttribute="height" multiplier="0.4" id="mMZ-Ba-0vP"/>
+                                            <constraint firstItem="naj-e3-xZQ" firstAttribute="height" relation="lessThanOrEqual" secondItem="QmE-5c-VdC" secondAttribute="height" multiplier="0.4" id="mMZ-Ba-0vP"/>
                                         </constraints>
                                     </stackView>
                                 </subviews>
