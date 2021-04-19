@@ -3,6 +3,7 @@
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -33,19 +34,13 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="naj-e3-xZQ" userLabel="Value and Icon">
                                                 <rect key="frame" x="0.0" y="65.000000000000014" width="414" height="132.33333333333337"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bitcoinsign.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="gcv-c0-Kp6">
-                                                        <rect key="frame" x="0.0" y="1" width="414" height="92.666666666666671"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gcv-c0-Kp6">
+                                                        <rect key="frame" x="0.0" y="2.3333333333333357" width="414" height="89.333333333333329"/>
                                                         <color key="tintColor" red="0.98431372549999996" green="0.70980392160000005" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="16" id="ARR-jt-IYI"/>
-                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="16" id="jl2-RA-KGL"/>
-                                                        </constraints>
+                                                        <imageReference key="image" image="bitcoinsign.circle" catalog="system" symbolScale="small"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="$ 31.010.20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SCC-d6-LC9">
                                                         <rect key="frame" x="0.0" y="94" width="414" height="38.333333333333343"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="67.329999999999998" id="4Sj-pZ-e3Y"/>
-                                                        </constraints>
                                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="28"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
