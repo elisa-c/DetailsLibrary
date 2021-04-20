@@ -111,8 +111,8 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="volumes negociados" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Krx-mb-cD4">
-                                        <rect key="frame" x="76" y="31" width="223" height="33"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="volumes negociados" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Krx-mb-cD4">
+                                        <rect key="frame" x="0.0" y="31" width="375" height="33"/>
                                         <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="24"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -128,9 +128,9 @@
                                     <constraint firstItem="Krx-mb-cD4" firstAttribute="top" secondItem="LMf-hO-TyS" secondAttribute="top" constant="31" id="KpE-8a-IwU"/>
                                     <constraint firstAttribute="trailing" secondItem="C70-8f-EXu" secondAttribute="trailing" constant="3" id="LkV-i5-iZK"/>
                                     <constraint firstItem="Pa1-uz-bGr" firstAttribute="leading" secondItem="6Kd-WX-Kck" secondAttribute="trailing" constant="11" id="M0U-qZ-fc4"/>
-                                    <constraint firstAttribute="trailing" secondItem="Krx-mb-cD4" secondAttribute="trailing" constant="76" id="ZIC-8A-eh2"/>
+                                    <constraint firstAttribute="trailing" secondItem="Krx-mb-cD4" secondAttribute="trailing" id="ZIC-8A-eh2"/>
                                     <constraint firstItem="wTz-ZV-Yyv" firstAttribute="top" secondItem="C70-8f-EXu" secondAttribute="bottom" constant="28" id="ap4-2L-sDx"/>
-                                    <constraint firstItem="Krx-mb-cD4" firstAttribute="leading" secondItem="LMf-hO-TyS" secondAttribute="leading" constant="76" id="bzu-ft-sTt"/>
+                                    <constraint firstItem="Krx-mb-cD4" firstAttribute="leading" secondItem="LMf-hO-TyS" secondAttribute="leading" id="bzu-ft-sTt"/>
                                     <constraint firstItem="fik-yl-gfa" firstAttribute="leading" secondItem="LMf-hO-TyS" secondAttribute="leading" constant="8" id="dOM-aX-Sfg"/>
                                     <constraint firstItem="6Kd-WX-Kck" firstAttribute="top" secondItem="Krx-mb-cD4" secondAttribute="bottom" constant="47" id="fl6-2Z-3ss"/>
                                     <constraint firstAttribute="trailing" secondItem="wTz-ZV-Yyv" secondAttribute="trailing" constant="3" id="iT7-Mz-SpY"/>
