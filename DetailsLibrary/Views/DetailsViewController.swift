@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AlamofireImage
 
 public class DetailsViewController: UIViewController {
     
@@ -17,8 +18,8 @@ public class DetailsViewController: UIViewController {
     @IBOutlet weak var lastDay: UILabel!
     @IBOutlet weak var lastMonth: UILabel!
     
-    var teste: String = ""
-    var sigla: String = ""
+    public var teste: String = "valor inicial"
+    var sigla: String = "valor inicializado no módulo"
     var isFavorite: Bool = false
     let defaults = UserDefaults.standard
     var arrayOfFav:[String] = []
@@ -26,15 +27,26 @@ public class DetailsViewController: UIViewController {
     
     public override func viewDidLoad() {
         super.viewDidLoad()
+        print(teste)
+        print("sigla no viewDidLoad: \(sigla)")
+        print("self.sigla no viewDidLoad: \(self.sigla)")
+        print("--------------")
 
     }
     
+    public static var bundleUI: Bundle {
+            var bundle: Bundle
+            if let bundeLet = Bundle(identifier: "com.br.everis.DetailsLibrary") {
+                bundle = bundeLet
+            } else {
+                bundle = Bundle(for: self)
+            }
+            return bundle
+        }
+    
     public override func viewDidLayoutSubviews(){
-//        button.layer.cornerRadius = 5
-//        button.layer.borderWidth = 1
-//        button.layer.borderColor = UIColor.white.cgColor
-//        button.contentEdgeInsets = UIEdgeInsets(top: 15, left: 25, bottom: 15, right: 25)
 
+        // modificações no layout vão aqui
     }
 
 //    public override func viewWillAppear(_ animated: Bool) {
@@ -55,22 +67,41 @@ public class DetailsViewController: UIViewController {
 //    }
     
     public init(sigla: String) {
-        self.teste = sigla
-        print(self.teste)
-        self.coinAbbreviation?.text = sigla
         super.init(nibName: nil, bundle: nil)
-        
-        // aqui passaria a sigla da inicialização para a variavel local sigla
+        print(teste)
+        self.sigla = sigla
+        print("--------------")
+        print("sigla no init: \(sigla)")
+        print("self.sigla no init: \(self.sigla)")
+        print("--------------")
         
     }
+
     
     public override func viewDidAppear(_ animated: Bool) {
+
         let provider = DetailsAPI()
+        let a = "PLN"
+        print(teste)
+        print("self.sigla didappear: \(self.sigla)")
+
         
-        let a = "placeholder"
-        
-        provider.getDetails(abrevDetails: a, completion: {(result) in
-            print(result.name!)
+        provider.getDetails(abrevDetails: teste, completion: {(result) in
+            DispatchQueue.main.async {
+                print("--------------")
+                print("viewDidAppear dispatchQueue")
+                self.coinAbbreviation?.text = result.abbreviation!
+                self.coinValue?.text = String(format: "%.2f", result.priceUsd!)
+                self.lastHour?.text = String(format: "%.2f", result.volume1HrsUsd!)
+                self.lastDay?.text = String(format: "%.2f", result.volume1DayUsd!)
+                self.lastMonth?.text = String(format: "%.2f", result.volume1MthUsd!)
+                
+                let baseURL = "https://s3.eu-central-1.amazonaws.com/bbxt-static-icons/type-id/png_64/\(result.idIcon ?? "BTC").png"
+                guard let imageURL = URL(string: baseURL) else {return}
+                self.coinImage.af_setImage(withURL: imageURL)
+
+            }
+
         })
     }
     
@@ -80,17 +111,6 @@ public class DetailsViewController: UIViewController {
             super.init(coder: aDecoder)
     }
     
-    public static func execLoad() -> UIViewController {
-            if let bundle = Bundle(identifier: "com.br.everis.DetailsLibrary") {
-                let sb = UIStoryboard(name: "Details", bundle: bundle)
-                let vc = sb.instantiateViewController(withIdentifier: "DetailsID") as! DetailsViewController
-                vc.loadViewIfNeeded()
-                return vc
-            } else {
-                return UIViewController()
-            }
-            
-        }
     
     
 //    @IBAction func addOrRemove(_ sender: Any) {
@@ -110,41 +130,27 @@ public class DetailsViewController: UIViewController {
     
     
 }
+//
+//extension UIViewController {
+//    public static var bundleUI: Bundle {
+//        var bundle: Bundle
+//        if let bundeLet = Bundle(identifier: "com.br.everis.DetailsLibrary") {
+//            bundle = bundeLet
+//        } else {
+//            bundle = Bundle(for: self)
+//        }
+//        return bundle
+//    }
+//    public class func fromSB() -> Self {
+//        return fromSB(viewType: self)
+//    }
+//    public class func fromSB<T: UIViewController>(viewType: T.Type) -> T {
+//        let sb = UIStoryboard(name: "Details", bundle: bundleUI)
+//        if let vc = sb.instantiateViewController(withIdentifier: "DetailsID") as? T {
+//            vc.loadViewIfNeeded()
+//            return vc
+//        }
+//        return T()
+//    }
+//}
 
-extension UIViewController {
-    public static var bundleUI: Bundle {
-        var bundle: Bundle
-        if let bundeLet = Bundle(identifier: "com.br.everis.DetailsLibrary") {
-            bundle = bundeLet
-        } else {
-            bundle = Bundle(for: self)
-        }
-        return bundle
-    }
-    public class func fromSB() -> Self {
-        return fromSB(viewType: self)
-    }
-    public class func fromSB<T: UIViewController>(viewType: T.Type) -> T {
-        let sb = UIStoryboard(name: "Details", bundle: bundleUI)
-        if let vc = sb.instantiateViewController(withIdentifier: "DetailsID") as? T {
-            vc.loadViewIfNeeded()
-            return vc
-        }
-        return T()
-    }
-}
-
-public class loadStory: UIViewController {
-    public static func execLoad() -> UIViewController {
-        if let bundle = Bundle(identifier: "com.br.everis.DetailsLibrary") {
-            let sb = UIStoryboard(name: "Details", bundle: bundle)
-            let vc = sb.instantiateViewController(withIdentifier: "DetailsID") as! DetailsViewController
-            vc.loadViewIfNeeded()
-            return vc
-        } else {
-            return UIViewController()
-        }
-        
-    }
-    
-}
