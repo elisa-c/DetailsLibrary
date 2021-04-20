@@ -25,6 +25,7 @@ s.source = { :git => "https://github.com/elisa-c/DetailsLibrary.git",
 
 # 7
 s.framework = "UIKit"
+s.dependency 'AlamofireImage', '~> 3.4.0'
 
 # 8
 s.source_files = "DetailsLibrary/**/*.{swift}"
