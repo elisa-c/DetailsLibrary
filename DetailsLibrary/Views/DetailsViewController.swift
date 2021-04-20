@@ -115,6 +115,7 @@ public class DetailsViewController: UIViewController {
                 defaults.setValue(localArray, forKey: "arrayFav")
             }
             button.setTitle("ADICIONAR", for: .normal)
+          
 
         } else {
             localArray.append(sigla)
