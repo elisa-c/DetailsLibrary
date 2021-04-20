@@ -96,7 +96,9 @@ public class DetailsViewController: UIViewController {
                 self.lastDay?.text = String(format: "%.2f", result.volume1DayUsd!)
                 self.lastMonth?.text = String(format: "%.2f", result.volume1MthUsd!)
                 
-                let baseURL = "https://s3.eu-central-1.amazonaws.com/bbxt-static-icons/type-id/png_64/\(result.idIcon ?? "BTC").png"
+                let newIconID = result.idIcon!.replacingOccurrences(of: "-", with: "")
+
+                let baseURL = "https://s3.eu-central-1.amazonaws.com/bbxt-static-icons/type-id/png_32/\(newIconID).png"
                 guard let imageURL = URL(string: baseURL) else {return}
                 self.coinImage.af_setImage(withURL: imageURL)
 
