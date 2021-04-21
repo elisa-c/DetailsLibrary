@@ -66,7 +66,6 @@ public class DetailsViewController: UIViewController {
         self.sigla = sigla
     }
 
-    
     public override func viewDidAppear(_ animated: Bool) {
 
         let provider = DetailsAPI()
@@ -127,27 +126,3 @@ public class DetailsViewController: UIViewController {
     
     
 }
-//
-//extension UIViewController {
-//    public static var bundleUI: Bundle {
-//        var bundle: Bundle
-//        if let bundeLet = Bundle(identifier: "com.br.everis.DetailsLibrary") {
-//            bundle = bundeLet
-//        } else {
-//            bundle = Bundle(for: self)
-//        }
-//        return bundle
-//    }
-//    public class func fromSB() -> Self {
-//        return fromSB(viewType: self)
-//    }
-//    public class func fromSB<T: UIViewController>(viewType: T.Type) -> T {
-//        let sb = UIStoryboard(name: "Details", bundle: bundleUI)
-//        if let vc = sb.instantiateViewController(withIdentifier: "DetailsID") as? T {
-//            vc.loadViewIfNeeded()
-//            return vc
-//        }
-//        return T()
-//    }
-//}
-
