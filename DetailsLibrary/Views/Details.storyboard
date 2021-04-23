@@ -58,11 +58,14 @@
                                                 </constraints>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="af1-bu-sZE">
-                                                <rect key="frame" x="34" y="17" width="51" height="38"/>
+                                                <rect key="frame" x="30" y="17" width="51" height="38"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="19"/>
                                                 <state key="normal" title="Voltar">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="buttonBack:" destination="lDS-Ao-bKj" eventType="touchUpInside" id="zVX-IC-JWT"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="BTC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="04i-fH-WYy">
                                                 <rect key="frame" x="166" y="21" width="42" height="30.5"/>
@@ -76,7 +79,7 @@
                                             <constraint firstItem="1PJ-dP-iUa" firstAttribute="top" secondItem="SCC-d6-LC9" secondAttribute="bottom" constant="39.5" id="0wn-f4-zOm"/>
                                             <constraint firstItem="1PJ-dP-iUa" firstAttribute="leading" secondItem="0sa-CC-cze" secondAttribute="leading" constant="55" id="1Kc-Ug-OeH"/>
                                             <constraint firstItem="gcv-c0-Kp6" firstAttribute="top" secondItem="04i-fH-WYy" secondAttribute="bottom" constant="52.5" id="371-23-U08"/>
-                                            <constraint firstItem="af1-bu-sZE" firstAttribute="leading" secondItem="Cwt-ER-LTp" secondAttribute="trailing" constant="1" id="5tX-RA-jsL"/>
+                                            <constraint firstItem="af1-bu-sZE" firstAttribute="leading" secondItem="Cwt-ER-LTp" secondAttribute="trailing" constant="-3" id="5tX-RA-jsL"/>
                                             <constraint firstItem="SCC-d6-LC9" firstAttribute="leading" secondItem="0sa-CC-cze" secondAttribute="leading" constant="113.5" id="8PM-YD-efc"/>
                                             <constraint firstItem="Cwt-ER-LTp" firstAttribute="leading" secondItem="0sa-CC-cze" secondAttribute="leading" constant="8" id="D9z-kL-weM"/>
                                             <constraint firstItem="af1-bu-sZE" firstAttribute="top" secondItem="0sa-CC-cze" secondAttribute="top" constant="17" id="Tqx-fE-MOy"/>
@@ -85,8 +88,7 @@
                                             <constraint firstAttribute="trailing" secondItem="gcv-c0-Kp6" secondAttribute="trailing" constant="161" id="bsT-wK-GTp"/>
                                             <constraint firstItem="Cwt-ER-LTp" firstAttribute="top" secondItem="0sa-CC-cze" secondAttribute="top" constant="21" id="cYe-Zl-7s9"/>
                                             <constraint firstItem="gcv-c0-Kp6" firstAttribute="leading" secondItem="0sa-CC-cze" secondAttribute="leading" constant="161" id="haq-NH-Tq9"/>
-                                            <constraint firstItem="04i-fH-WYy" firstAttribute="leading" secondItem="af1-bu-sZE" secondAttribute="trailing" constant="81" id="hqD-nk-rVd"/>
-                                            <constraint firstAttribute="trailing" secondItem="04i-fH-WYy" secondAttribute="trailing" constant="167" id="qH5-vx-t2L"/>
+                                            <constraint firstItem="04i-fH-WYy" firstAttribute="leading" secondItem="af1-bu-sZE" secondAttribute="trailing" constant="85" id="hqD-nk-rVd"/>
                                             <constraint firstAttribute="trailing" secondItem="1PJ-dP-iUa" secondAttribute="trailing" constant="55" id="vdO-61-Nzq"/>
                                             <constraint firstAttribute="trailing" secondItem="SCC-d6-LC9" secondAttribute="trailing" constant="113.5" id="zti-Ug-b63"/>
                                         </constraints>
@@ -94,12 +96,6 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="epG-qC-Gwl">
                                         <rect key="frame" x="0.0" y="376" width="375" height="291"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="último dia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VXL-Kq-hnO">
-                                                <rect key="frame" x="13" y="112.5" width="81" height="25"/>
-                                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="18"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="$ 123.456.78" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uz4-1S-pbp">
                                                 <rect key="frame" x="99" y="59" width="263" height="25"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="18"/>
@@ -114,6 +110,12 @@
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="$ 123.456.78" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dK0-Hd-TZM">
                                                 <rect key="frame" x="99" y="113" width="263" height="25"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="18"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="último dia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VXL-Kq-hnO">
+                                                <rect key="frame" x="13" y="112.5" width="81" height="25"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="18"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -179,6 +181,9 @@
                         <outlet property="coinAbbreviation" destination="04i-fH-WYy" id="qJI-8k-Iv1"/>
                         <outlet property="coinImage" destination="gcv-c0-Kp6" id="2tl-si-rkg"/>
                         <outlet property="coinValue" destination="SCC-d6-LC9" id="iDD-Ak-Msk"/>
+                        <outlet property="lastDay" destination="VXL-Kq-hnO" id="zD3-SX-Stp"/>
+                        <outlet property="lastHour" destination="HRK-xi-klk" id="eKg-es-6U5"/>
+                        <outlet property="lastMonth" destination="Pso-kz-Qsc" id="EoF-gY-wzZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="udu-mh-JAy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -29,7 +29,11 @@ public class DetailsViewController: UIViewController {
         
         self.navigationController?.isNavigationBarHidden = true
     }
-
+    
+    @IBAction func buttonBack(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     public static var bundleUI: Bundle {
             var bundle: Bundle
             if let bundeLet = Bundle(identifier: "com.br.everis.DetailsLibrary") {
