@@ -26,7 +26,8 @@ public class DetailsViewController: UIViewController {
     
     public override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        self.navigationController?.isNavigationBarHidden = true
     }
 
     public static var bundleUI: Bundle {
@@ -41,10 +42,16 @@ public class DetailsViewController: UIViewController {
     
     public override func viewDidLayoutSubviews(){
         // modificações no layout vão aqui
+        
+        button.layer.borderWidth = 5
+        button.layer.borderColor = UIColor.white.cgColor
+        button.layer.cornerRadius = 8
     }
 
     public override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
+        self.navigationController?.isNavigationBarHidden = true
+
 
         // recuperando o array de favoritos
         guard let savedArray = defaults.object(forKey: "arrayFav") as? [String] else {
@@ -59,6 +66,11 @@ public class DetailsViewController: UIViewController {
                 button.setTitle("REMOVER", for: .normal)
                 isFavorite = true
         }
+    }
+    
+    public override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: animated)
     }
     
     public init(sigla: String) {
