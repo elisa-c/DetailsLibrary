@@ -181,9 +181,9 @@
                         <outlet property="coinAbbreviation" destination="04i-fH-WYy" id="qJI-8k-Iv1"/>
                         <outlet property="coinImage" destination="gcv-c0-Kp6" id="2tl-si-rkg"/>
                         <outlet property="coinValue" destination="SCC-d6-LC9" id="iDD-Ak-Msk"/>
-                        <outlet property="lastDay" destination="VXL-Kq-hnO" id="zD3-SX-Stp"/>
-                        <outlet property="lastHour" destination="HRK-xi-klk" id="eKg-es-6U5"/>
-                        <outlet property="lastMonth" destination="Pso-kz-Qsc" id="EoF-gY-wzZ"/>
+                        <outlet property="lastDay" destination="dK0-Hd-TZM" id="WSa-dD-Rev"/>
+                        <outlet property="lastHour" destination="uz4-1S-pbp" id="ZaG-Zr-80L"/>
+                        <outlet property="lastMonth" destination="3Ml-h3-nF9" id="Ojb-28-noI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="udu-mh-JAy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
